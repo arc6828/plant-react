@@ -25,3 +25,8 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+Route::get('/occurrence',function(){
+    return Inertia::render('PlantOccurrence');
+})->name('occurrence');
